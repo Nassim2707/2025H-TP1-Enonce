@@ -23,5 +23,5 @@ secondes %= 60
 # TODO: Assigner à la variable "secondes" le nombre de secondes restantes
 secondes= secondes
 # TODO: Afficher le nombres d'années, semaines, jours, heures, minutes et secondes
-output = f"{annees} années, {semaines} semaines, {jours} jours, {heures} heures, {minutes} minutes, {secondes} secondes"
-print(f"Entrez un nombre de secondes : {output}")
+#output = f"{annees} années, {semaines} semaines, {jours} jours, {heures} heures, {minutes} minutes, {secondes} secondes"
+print(f"{annees} {semaines} {jours} {heures} {minutes} {secondes}")
