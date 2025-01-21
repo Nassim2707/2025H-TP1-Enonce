@@ -14,8 +14,8 @@ angle_r= angle*math.pi/180
 # Calculer la distance maximale en x
 distance_max = ((speed**2)*(math.sin((angle_r)*2)))/g
 # Afficher la distance maximale arrondie à 2 chiffres après la virgule
-distance_arrondie = round(distance_max, 1)
-print(f"Distance parcourue: {distance_arrondie}m\n")
+
+print(f" Distance parcourue: {distance_max:.2f}m")
 # Exemple:
 # Pour une vitesse initiale de 10 m/s et un angle de 45 degrés
 # La distance parcourue serait de 10.20m

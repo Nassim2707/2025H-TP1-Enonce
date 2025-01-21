@@ -1,8 +1,9 @@
 # Demandez à l'utilisateur d'entrer le niveau de charge actuel de la batterie
-batterie = float(input("Entrez le niveau de charge actuel de la batterie : "))
+batterie = int(input("Entrez le niveau de charge actuel de la batterie : "))
 # Vérifiez si le niveau de charge est valide
 if batterie > 100 or batterie < 0 :
-    print("Erreur : niveau de charge invalide. ")
+    print("Erreur : niveau de charge invalide.")
+    pass
 else: 
 
 # Arrondir le pourcentage à la dizaine la plus proche
@@ -12,7 +13,7 @@ else:
     barres = "❚" * (batterie_arrondie // 10)
     espaces = " " * (10 - (batterie_arrondie // 10))
 # Afficher la représentation graphique de la charge de la batterie
-print(f"[{barres}{espaces}]\n{batterie}%\n")
+    print(f"[{barres}{espaces}]\n{batterie}%")
 # Exemple d'utilisation :
 # Si l'utilisateur entre 76, la sortie sera :
 # [❚❚❚❚❚❚❚❚     ]

@@ -8,6 +8,7 @@ c = int(input("Entrez c: "))
 delta = b**2 - 4*a*c
 
 # Déterminer la condition (bool) qui correspond à aucune solution de l'équation et mettre la valeur dans la variable "naPasDeSolution"
+naPasDeSolution = False
 if delta < 0:
  naPasDeSolution = True 
 
@@ -19,6 +20,8 @@ if naPasDeSolution:
     pass
 else:
     # Déterminer la condition (bool) qui correspond à une unique solution de l'équation et mettre la valeur dans "aUneSeuleSolution"
+    aUneSeuleSolution = False
+    
     if delta == 0:
         aUneSeuleSolution = True
 
@@ -27,22 +30,24 @@ else:
         # afficher sur l'écran "Une seule racine"
         print("Une seule racine")
         # assigner a la variable x1 la valeur de la racine
-        x1 = (-b/ 2*a )**0.5 
-        (x1)
+        x1 = -b / (2 * a)
+        print(x1)
         pass
    
     else:
         # Déterminer la condition (bool) qui correspond à deux solutions de l'équation et mettre la valeur dans "aDeuxSolutions"
-        aDeuxSolutions = True
+        aDeuxSolutions = False
+        if delta > 0:
+            aDeuxSolutions = True
     
         if aDeuxSolutions:
             # afficher sur l'écran "Deux racines"
             print("Deux racines")
             # calculer la prmiere racine, assigner la a "x1"
-            x1 = (- b + delta / 2*a )**0.5 
+            x1 = (-b + math.sqrt(delta)) / (2 * a)
             # calculer la deuxieme racine, assigner la a "x2"
-            x2 = (-b - delta/ 2*a )**0.5 
-            print(x1, x2)
+            x2 = (-b - math.sqrt(delta)) / (2 * a)
+            print(x2, x1)
             pass
 
 # Exemple d'utilisation:
